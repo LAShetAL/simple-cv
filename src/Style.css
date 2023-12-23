@@ -1,0 +1,782 @@
+#root {
+    .home {
+        display: flex;
+        gap: 24px;
+        margin: auto;
+        max-width: 1500px;
+        padding: 32px 24px;
+        width: 100%;
+
+        .sideContainer {
+            box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2);
+
+            display: flex;
+            flex-direction: column;
+            background-color: teal;
+            /* width: 400px; */
+            width: 20%;
+            height: webkit-fit-content;
+            max-height: fit-content;
+            align-items: center;
+            border-radius: 4px;
+            gap: 30px;
+            background-color: white;
+            .topAreaSideContainer{
+                /* height: 60px; */
+                height: 6%;
+                width: 100%;
+                background-color: white;
+                .topResetTemplate {
+                    background-color: #f8f0d7;
+                    border-radius: 8px;
+                    box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    justify-content: center;
+                    padding: 12px;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 8px;
+                    z-index: 3;
+    
+                    .deleteAll {
+                        border: none;
+                        background-color: initial;
+                        cursor: pointer;
+                        color: red;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        font-weight: 700;
+                    }
+    
+                    .loadExample {
+                        border-radius: 4px;
+                        background-color: rgba(14, 55, 78, .07);
+                        cursor: pointer;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                }
+            }
+            
+            .formContainer {
+                display: flex;
+                flex-direction: column;
+                background-color: teal;
+                /* width: 400px; */
+                width: 100%;
+                height: webkit-fit-content;
+                max-height: fit-content;
+                align-items: center;
+                border-radius: 4px;
+                gap: 30px;
+
+                
+
+                h2 {
+                    justify-content: center;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .contentPersonalForm {
+                    display: flex;
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    flex-direction: column;
+                    gap: 10px;
+                    opacity: 1;
+                    border-radius: 4px;
+                    background-color: teal;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    /* width: 360px; */
+                    width: 100%;
+                    .labelContainer {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: left;
+                        padding-left: 10px;
+                        gap: 10px;
+
+                        .labelPersonal {
+                            /* width: auto;
+                            width: 100px;
+                            height: 40px; */
+                            width: 100%;
+                            
+                        }
+                    }
+
+                    .inputContainer {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-right: 10px;
+                        gap: 10px;
+                        align-items: center;
+                        .inputPersonal {
+                            border-radius: 4px;
+                            /* width: 180px; */
+                            /* height: 30px; */
+                            /* width: 18%; */
+                            /* height: %; */
+                            gap: 10px;
+                            width: 90%;
+                            height: 25px;
+                            background: #f9f6ee;                            
+                        }
+                        .labelPersonal {
+                            /* width: auto;
+                            width: 100px;
+                            height: 40px; */
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+
+
+
+                .contentEducationForm {
+                    opacity: 1;
+                    box-sizing: border-box;
+                    border: none;
+                    background-color: teal;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    /* width: 360px; */
+                    width: 90%;
+                    align-items: center;
+                    background-color: #f9f6ee;
+                    .addEducationSection {
+                        width: 100%;
+
+                        .expandSection {
+                            display: flex;
+                            height: 40px;
+                            border: none;
+                            border-radius: 4px;
+                            font-family: NotoSans-bold;
+                            padding: 8px 16px;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            cursor: pointer;
+
+                        }
+                    }
+                    
+
+                    .schoolContainer {
+                        .addedSchool {
+                            border-radius:4px ;
+                            width: 100%;
+                            height: 90%;
+                            p {
+                                padding: 10px;
+                            }
+
+                            .ul {
+                                gap: 5px;
+                                background-color: #f9f6ee;
+                                border-radius: 4px;
+
+                                .education-li {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    /* height: 40px; */
+                                    height: 8%;
+                                    width: 100%;
+
+                                    .actions {
+                                        display: flex;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .educationForm {
+                        margin: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .inputForm {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .inputEducation {
+                            border-radius: 4px;
+                            /* height: 25px; */
+                            height: 4%;
+                            background: #f9f6ee;
+                            background-color: #f9f6ee;
+                        }
+
+
+                        .buttonLocation {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 8px 16px;
+                            position: relative;
+                            /* right: 10px; */
+                            right: 1%;
+
+                            .inputControl {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: row;
+
+                                .inputEkle {
+                                    display: flex;
+                                    border-radius: 4px;
+                                    /* height: 30px; */
+                                    height: 3%;
+                                    background-color: #187ff5;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 4px;
+                                    font-family: NotoSans-bold;
+                                    padding: 8px 16px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                }
+
+                                .inputSil {
+                                    display: flex;
+                                    border-radius: 4px;
+                                    /* height: 30px; */
+                                    height: 3%;
+                                    background-color: wheat;
+                                    color: red;
+                                    border: none;
+                                    border-radius: 4px;
+                                    font-family: NotoSans-bold;
+                                    padding: 8px 16px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    position: relative;
+                                    right: 10px;
+                                }
+                            }
+                            .cancelMedia{
+                                display: none;
+                            }
+                            .cancel {
+                                display: flex;
+                                border: none;
+                                border-radius: 4px;
+                                font-family: NotoSans-bold;
+                                padding: 8px 16px;
+                                background-color: wheat;
+                                border-radius: 4px;
+                                /* height: 30px; */
+                                height: 3%;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+
+                    .buttonAreaEducation {
+                        display: flex;
+                        justify-content: center;
+
+                        .addEducation {
+                            /* margin-bottom: 0px; */
+                            align-items: center;
+                            border-radius: 4px;
+                            width: 45%;
+                            /* height: 25px; */
+                            height: 3%;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        .contentCompany {
+            opacity: 1;
+            box-sizing: border-box;
+            border: none;
+            background-color: teal;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            height: 100%;
+            border-radius: 4px;
+            /* width: 360px; */
+            width: 90%;
+            align-items: center;
+            .addCompanySection {
+                width: 100%;
+
+                .expandSection {
+                    display: flex;
+                    height: 40px;
+                    /* height: 4%; */
+                    border: none;
+                    border-radius: 4px;
+                    font-family: NotoSans-bold;
+                    padding: 8px 16px;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+            
+
+            .companyContainer {
+                .addedCompanies {
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 100%;
+
+                    .ul {
+                        .li {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            /* height: 40px; */
+                            height: 4%;
+                            width: 100%;
+
+                            .actions {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contentExperienceForm {
+                .experienceForm {
+                    background-color: #f9f6ee;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+
+                    textarea {
+                        width: 95%;
+                        /* height: 50px; */
+                        height: 5%;
+                        min-width: 1em;
+                        grid-area: 1 / 2;
+                        font: inherit;
+                        padding: 0.25em;
+                        margin: 0;
+                        resize: none;
+                        background: #f9f6ee;
+                        appearance: none;
+                        border-radius: 4px;
+                    }
+
+                    button {
+                        border-radius: 4px;
+                        /* height: 25px; */
+                        height: 3%;
+                    }
+
+                    input {
+                        border-radius: 4px;
+                        /* height: 25px; */
+                        height: 3%;
+                        background: #f9f6ee;
+                        width: 90%;
+                    }
+                }
+
+                .buttonLocation {
+                    background-color: #f9f6ee;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 8px 16px;
+
+                    .inputControl {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: row;
+
+                        .inputEkle {
+                            display: flex;
+                            border-radius: 4px;
+                            /* height: 30px; */
+                            height: 4%;
+                            background-color: #187ff5;
+                            color: white;
+                            border: none;
+                            border-radius: 4px;
+                            font-family: NotoSans-bold;
+                            padding: 8px 16px;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+
+                        .inputSil {
+                            display: flex;
+                            border-radius: 4px;
+                            /* height: 30px; */
+                            height: 3%;
+                            background-color: wheat;
+                            color: red;
+                            border: none;
+                            border-radius: 4px;
+                            font-family: NotoSans-bold;
+                            padding: 8px 16px;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            position: relative;
+                            /* right: 10px; */
+                            right: 1%;
+                        }
+                    }
+                    .cancelMedia{
+                        display: none;
+                    }
+                    .cancel {
+                        display: flex;
+                        border: none;
+                        border-radius: 4px;
+                        font-family: NotoSans-bold;
+                        padding: 8px 16px;
+                        background-color: wheat;
+                        border-radius: 4px;
+                        /* height: 30px; */
+                        height: 3%;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+            .buttonArea {
+                display: flex;
+                justify-content: center;
+
+                .buttonCompany {
+                    /* width: 150px; */
+                    /* height: 25px; */
+                    width: 15%;
+                    height: 3%;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .CVArea {
+            box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, .2);
+
+            flex-grow: 1;
+            flex-wrap: wrap;
+            /* width: 750px; */
+            /* height: 29.88468cm; */
+            width: 75%;
+            background-color: #f9f6ee;
+
+            .topArea {
+                border-radius: 4px;
+                background-color: rgba(20, 20, 243, 0.822);
+
+                .personalInfo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .contactInfo {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding-bottom: 20px;
+
+                    .email {
+                        .emailBlok {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    .number {
+                        .numberBlok {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+            .cvDetails {
+                display: flex;
+                flex-direction: column;
+                border-radius: 4px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                padding: 0 56px;
+
+                .cvEducationInfo {
+                    width: 100%;
+                    display: flex;
+                    gap: 5px;
+                    border-radius: 4px;
+
+                    .educationInfoGroup {
+                        .headerText {
+                            display: flex;
+                            width: 100%;
+                            background-color: rgba(14, 55, 78, .07);
+                            height: 30px;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+                        width: 90%;
+
+                        .educationGroup {
+                            width: 90%;
+                            border-radius: 4px;
+
+                            h3 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .edForm {
+                                width: 90%;
+                                display: flex;
+                                flex-direction: row;
+                                margin: 0;
+                                padding: 0;
+                                gap: 18px;
+
+                                .tarih {
+                                    /* min-width: 150px; */
+                                    min-width: 20%;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+
+                                .bilgi {
+                                    font-style: bold;
+                                    /* min-width: 150px; */
+                                    min-width: 20%;
+                                    flex-direction: column;
+                                    box-sizing: border-box;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    .okul {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .cvExperience {
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 4px;
+                    justify-content: center;
+                    /* align-items: center; */
+                    padding: 0 56px;
+                    width: 90%;
+
+                    .companyGroup {
+                        width: 90%;
+                        display: flex;
+                        gap: 5px;
+                        flex-direction: column;
+                        border-radius: 4px;
+
+                        .headerText {
+                            display: flex;
+                            width: 100%;
+                            background-color: rgba(14, 55, 78, .07);
+                            justify-content: center;
+                            align-items: center;
+                            /* height: 30px; */
+                            height: 4%;
+
+                        }
+
+                        .companyInfo {
+                            .isTarih {
+                                width: 90%;
+                                display: flex;
+                                flex-direction: row;
+                                margin: 0;
+                                padding: 0;
+                                gap: 18px;
+
+                                .is {
+                                    /* min-width: 150px; */
+                                    min-width: 20%;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    .sirket {
+                                        font-weight: bold;
+                                    }
+                                }
+
+                                .tarih {
+                                    /* min-width: 150px; */
+                                    min-width: 20%;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                            }
+
+                            .aciklama {
+                                display: flex;
+                                justify-content: center;
+                                padding-left: 10px;
+                                font-size: 16.5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+    #root .home {
+        .sideContainer{
+            width: 40%;
+            .formContainer{
+                .contentEducationForm{
+                    .educationForm{
+                        margin: 0;
+                        .buttonLocation{
+                            width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            button{
+                                width: 70%;
+                            }
+                            .cancel{
+                                display: none;
+                            }
+                            .cancelMedia{
+                                display: flex;
+                                border: none;
+                                border-radius: 4px;
+                                font-family: NotoSans-bold;
+                                padding: 8px 16px;
+                                background-color: wheat;
+                                border-radius: 4px;
+                                /* height: 30px; */
+                                height: 3%;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                
+                            }
+                            .inputControl{
+                                
+                                width: 45%;
+                                padding-right: 70px;
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                }
+                
+                .contentCompany{
+                    .buttonLocation{
+                        width: 100%;
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            button{
+                                width: 70%;
+                            }
+                            .cancel{
+                                display: none;
+                            }
+                            .cancelMedia{
+                                display: flex;
+                                border: none;
+                                border-radius: 4px;
+                                font-family: NotoSans-bold;
+                                padding: 8px 16px;
+                                background-color: wheat;
+                                border-radius: 4px;
+                                /* height: 30px; */
+                                height: 3%;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                
+                            }
+                            .inputControl{
+                                
+                                width: 45%;
+                                padding-right: 70px;
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: row;
+                            }
+                    }
+                }
+            }
+            
+            
+        }
+        .CVArea{
+            width: 60%;
+            .cvDetails{
+                padding: 1px 2%;
+            }
+        }
+    }
+}
