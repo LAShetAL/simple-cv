@@ -199,6 +199,8 @@ export default function Page() {
     })
     setEducations([])
     setCompanies([])
+    setIsActive(false)
+    setIsActiveEducation(false)
   }
 
   const loadExample = () => {
@@ -240,6 +242,8 @@ export default function Page() {
       aciklama: 'Sed rhoncus massa eget rutrum placerat. Maecenas ut placerat mauris. Vivamus egestas sapien sit amet posuere egestas. Mauris cursus ac augue nec luctus. Aliquam vitae imperdiet felis. Fusce fermentum, diam non hendrerit luctus, nulla est lobortis nisi, sed tristique neque urna sit amet neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla eros tellus, facilisis non eros quis, mollis pulvinar mauris.'
 
     }])
+    setIsActive(false)
+    setIsActiveEducation(false)
   }
   return (
     <>
